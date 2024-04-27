@@ -1,0 +1,140 @@
+body{
+  height: 100vh;
+  width: 100%;
+  background: #901845;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+body{
+  flex-direction: column;
+}
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right img {
+  height: 650px;
+}
+
+.left {
+
+  background: #FF7BAC;
+  width: 640px;
+  height: 800px;
+  border: 1px;
+  border-radius: 600px 600px 10px 10px ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  padding-bottom: 10px;
+
+}
+.left h1 {
+  font-size: 100px;
+  font-family: "Norican", cursive;
+  font-weight: 400;
+  font-style: normal;
+color: #fff;
+}
+
+.mt{
+  margin-top: 100px;
+}
+
+.icons{
+  background: #FFFFFF;
+  height: 56px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  padding: 0 20px;
+;
+}
+.icons img{
+  height: 100px;
+  margin-top: -31px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.icons img:hover{
+  transform: translateY(-5px);
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+.box{
+  width: 195px;
+  height: 195px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.clothes{
+  position: absolute;
+  /*height: 10px;*/
+  /*width: 10px;*/
+  /*background: #888888;*/
+}
+
+#top{
+  top: 127px;
+  right: 167px;
+  height: 267px;
+  width: 164px;
+  background-repeat: no-repeat;
+  background-image: url(../img/top1.svg);
+  display: none;
+
+}
+
+#tanora{
+  top: 308px;
+  right: 157px;
+  height: 269px;
+  width: 185px;
+  background-repeat: no-repeat;
+  background-image: url(../img/t2.svg);
+  display: none;
+}
+#heals{
+  bottom: -211px;
+  right: 166px;
+  height: 269px;
+  width: 145px;
+  background-repeat: no-repeat;
+  background-image: url(../img/h1.svg);
+}
+
+.right__img{
+  height: 100px;
+  width: 100px;
+}
+#dress{
+  z-index: 999;
+  top: 127px;
+  right: 153px;
+  height: 496px;
+  width: 210px;
+  background-repeat: no-repeat;
+  background-image: url(../img/d1.svg);
+}
+
+.selected{
+  border: 6px solid #edff00;
+}
